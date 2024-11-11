@@ -9,7 +9,7 @@ namespace EXERCITANDO
 {
     internal class Ex3
     {
-        public static void atividade3()
+        public  void atividade3()
         {
             Console.Clear();
             Console.WriteLine("3. Escreva um programa que verifique se um número fornecido pelo usuário é par ou ímpar.");
@@ -28,8 +28,13 @@ namespace EXERCITANDO
 
             Thread.Sleep(3000);
             Console.Clear();
-            ExibirCabecalho();
-            ExibirOpcoesMenu();
+
+            MenuInicial variavelCabecalho = new MenuInicial();
+            variavelCabecalho.ExibirCabecalho();
+
+            ExibirMenu variavelMenu = new ExibirMenu();
+            variavelMenu.ExibirOpcoesMenu();
+
         }
     }
 }

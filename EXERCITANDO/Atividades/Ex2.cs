@@ -10,7 +10,7 @@ namespace EXERCITANDO
     internal class Ex2
     {
 
-        public static void atividade2()
+        public void atividade2()
         {
             Console.Clear();
             Console.WriteLine("2. Crie um programa que leia a idade de uma pessoa e informe se ela é maior de idade (18 anos ou mais) ou menor de idade.");
@@ -33,8 +33,12 @@ namespace EXERCITANDO
 
             Thread.Sleep(3000);
             Console.Clear();
-            ExibirCabecalho();
-            ExibirOpcoesMenu();
+
+            MenuInicial variavelCabecalho = new MenuInicial();
+            variavelCabecalho.ExibirCabecalho();
+
+            ExibirMenu variavelMenu = new ExibirMenu();
+            variavelMenu.ExibirOpcoesMenu();
         }
     }
 }

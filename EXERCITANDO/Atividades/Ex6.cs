@@ -10,7 +10,7 @@ namespace EXERCITANDO
     internal class Ex6
     {
 
-        public static void atividade6()
+        public void atividade6()
         {
             Console.Clear();
             Console.WriteLine("6. Faça um programa que leia a nota de um aluno e informe se ele está aprovado (nota maior ou igual a 7), em recuperação (nota entre 5 e 7) ou reprovado (nota menor que 5).");
@@ -33,8 +33,12 @@ namespace EXERCITANDO
 
             Thread.Sleep(3000);
             Console.Clear();
-            ExibirCabecalho();
-            ExibirOpcoesMenu();
+
+            MenuInicial variavelCabecalho = new MenuInicial();
+            variavelCabecalho.ExibirCabecalho();
+
+            ExibirMenu variavelMenu = new ExibirMenu();
+            variavelMenu.ExibirOpcoesMenu();
         }
     }
 }

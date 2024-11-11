@@ -10,7 +10,7 @@ namespace EXERCITANDO
     internal class Ex4
     {
 
-        public static void atividade4()
+        public void atividade4()
         {
             Console.Clear();
             Console.WriteLine("4. Crie um programa que leia três números e determine qual é o maior.");
@@ -35,8 +35,12 @@ namespace EXERCITANDO
 
             Thread.Sleep(3000);
             Console.Clear();
-            ExibirCabecalho();
-            ExibirOpcoesMenu();
+
+            MenuInicial variavelCabecalho = new MenuInicial();
+            variavelCabecalho.ExibirCabecalho();
+
+            ExibirMenu variavelMenu = new ExibirMenu();
+            variavelMenu.ExibirOpcoesMenu();
         }
     }
 }

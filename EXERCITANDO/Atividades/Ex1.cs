@@ -9,7 +9,7 @@ namespace EXERCITANDO
 {
     internal class Ex1
     {
-        public static void atividade1()
+        public void atividade1()
         {
             Console.Clear();
             Console.WriteLine("1.Escreva um programa que verifique se um número fornecido pelo usuário é positivo, negativo ou zero.");
@@ -32,8 +32,12 @@ namespace EXERCITANDO
 
             Thread.Sleep(3000);
             Console.Clear();
-            ExibirCabecalho();
-            ExibirOpcoesMenu();
+
+            MenuInicial variavelCabecalho = new MenuInicial();
+            variavelCabecalho.ExibirCabecalho();
+
+            ExibirMenu variavelMenu = new ExibirMenu();
+            variavelMenu.ExibirOpcoesMenu();
 
         }
     }

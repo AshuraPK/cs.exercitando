@@ -9,11 +9,15 @@ using System.Threading.Tasks;
 
 namespace EXERCITANDO
 {
-    public class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
+            MenuInicial variavelCabecalho = new MenuInicial();
+            variavelCabecalho.ExibirCabecalho();
 
+            ExibirMenu variavelMenu = new ExibirMenu();
+            variavelMenu.ExibirOpcoesMenu();
         }
 
     }

@@ -10,7 +10,7 @@ namespace EXERCITANDO
     internal class Ex5
     {
 
-        public static void atividade5()
+        public void atividade5()
         {
             Console.Clear();
             Console.WriteLine("5. Escreva um programa que verifique se uma letra fornecida pelo usuário é uma vogal ou uma consoante.");
@@ -29,8 +29,12 @@ namespace EXERCITANDO
 
             Thread.Sleep(3000);
             Console.Clear();
-            ExibirCabecalho();
-            ExibirOpcoesMenu();
+
+            MenuInicial variavelCabecalho = new MenuInicial();
+            variavelCabecalho.ExibirCabecalho();
+
+            ExibirMenu variavelMenu = new ExibirMenu();
+            variavelMenu.ExibirOpcoesMenu();
         }
     }
 }
